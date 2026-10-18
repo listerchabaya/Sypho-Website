@@ -182,3 +182,102 @@ footer{background:var(--navy);color:var(--on-navy);padding:2rem 0;font-size:.9re
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
 footer a{color:var(--on-navy)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* ---- small screens ---- */
+@media(max-width:640px){
+body{font-size:.95rem;line-height:1.55}
+h1{font-size:clamp(1.8rem,8.2vw,2.2rem)}
+h2{font-size:1.5rem}
+h3{font-size:1rem}
+section{padding:2.2rem 0}
+.wrap{padding:0 1rem}
+.sec-head{margin-bottom:1.1rem}
+/* header */
+header.nav .wrap{height:62px}
+.logo{gap:.5rem}
+.logo svg{width:36px;height:36px}
+.logo span{font-size:1.3rem}
+.logo small{font-size:.58rem;letter-spacing:.26em;margin-top:.2rem}
+nav ul{top:62px}
+nav ul a{display:block;padding:.65rem 0;font-size:1rem}
+.menu-btn{padding:.5rem .9rem}
+html{scroll-padding-top:70px}
+/* hero */
+.hero{padding:1.6rem 0 1.2rem}
+.eyebrow{font-size:.8rem;padding:.25rem .7rem;margin-bottom:.8rem}
+.eyebrow b{min-width:0}
+.lede{font-size:1rem}
+.cta{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:1.1rem}
+.cta .btn{text-align:center;padding:.75rem .5rem;font-size:.92rem}
+.cta .btn:first-child{grid-column:1/-1}
+.blobs i{filter:blur(45px);opacity:.25}
+.sample{animation:none}
+.steps{display:flex;flex-wrap:wrap;gap:.35rem .9rem;padding:.8rem 1rem}
+.steps li{padding:0;font-size:.85rem;gap:.4rem}
+.steps li.now{background:none}
+.steps li::before{width:9px;height:9px}
+.sample-foot{font-size:.78rem}
+.sample-foot span{display:none}
+/* slideshow */
+.lab-stage{padding:.2rem 0 1.4rem}
+.stage{height:210px;border-radius:10px}
+.slide figcaption{padding:2rem 1rem .8rem}
+.slide figcaption b{font-size:1.05rem}
+.slide figcaption span{display:none}
+.ctl{top:.5rem;right:.5rem;padding:.25rem .4rem}
+/* stats */
+.band{padding:1.3rem 0}
+.band .wrap{gap:1rem}
+.band strong{font-size:1.45rem}
+.band span{font-size:.8rem}
+.ticker span{padding:.55rem 1rem;font-size:.8rem}
+.ticker span::after{margin-left:2rem}
+/* about */
+.about-intro{margin-bottom:1.4rem}
+.about-intro p{font-size:1rem}
+.mv{gap:.8rem}
+.mv article{padding:1.2rem}
+.mv h3{font-size:.75rem;margin-bottom:.5rem}
+.mv p{font-size:1.1rem}
+.values{grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1rem}
+.values span{display:none}
+.values b{font-size:1rem}
+/* ICT */
+.tiles{gap:.7rem}
+.tile{display:grid;grid-template-columns:40px 1fr;column-gap:.8rem;padding:1rem;align-items:start}
+.tile svg{grid-row:1/3;width:30px;height:30px;margin:0}
+.tile h3{margin:0 0 .15rem}
+.tile p{font-size:.85rem;line-height:1.45}
+.chips{margin-top:1.2rem;gap:.4rem}
+.chips b{width:100%;margin:0 0 .2rem}
+.chips span{font-size:.8rem;padding:.25rem .7rem}
+/* LIMS tabs */
+.tabs{flex-wrap:nowrap;overflow-x:auto;gap:.4rem;margin:0 -1rem 1rem;padding:0 1rem .3rem;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;padding:.45rem .85rem;font-size:.88rem}
+.panel{padding:1.1rem}
+.panel li{font-size:.92rem;margin-bottom:.3rem}
+/* track record table becomes cards */
+.tbl-wrap{border:0;background:none}
+table{min-width:0;display:block}
+thead{display:none}
+tbody{display:grid;gap:.6rem}
+tr{display:block;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.7rem .9rem}
+td{display:block;border:0;padding:.05rem 0}
+td:first-child{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+td:nth-child(2){font-weight:600}
+td:nth-child(4){font-size:.85rem}
+/* contact form */
+#contact .two{gap:1.2rem}
+.contact-list{font-size:.92rem}
+form{gap:.7rem}
+label{font-size:.85rem;gap:.25rem}
+input,select,textarea{padding:.55rem .7rem;font-size:1rem}
+textarea{min-height:84px}
+form .btn{width:100%;padding:.8rem}
+#note{font-size:.8rem}
+/* whatsapp + footer */
+.wa-fab{right:.8rem;bottom:calc(.8rem + env(safe-area-inset-bottom,0px));padding:.25rem}
+.wa-fab svg{width:38px;height:38px;padding:8px}
+footer{padding:1.4rem 0 4.2rem;font-size:.82rem;text-align:center}
+footer .wrap{justify-content:center}
+}
